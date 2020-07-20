@@ -41,9 +41,10 @@ let data = {
     website: "hildegard.org",
 }
 
-let newData = { ...data };
-newData.name = "Ervin Nurhediyanto";
-newData.email = "cafeinai311@gmail.com";
+let newData = { ...data,
+name : "Ervin Nurhediyanto",
+email : "cafeinai311@gmail.com" };
+
 // tambah data hobby
 newData.hobby = ["Traveling", "Gaming", "Spleeping"];
 

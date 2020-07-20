@@ -17,7 +17,7 @@ if (typeof printSegitiga == "number") {
     for (let i = 0; i < printSegitiga; i++) {
         let line = "";
         for (let j = 0; j < (printSegitiga - i); j++) {
-            line += (printSegitiga - i);
+            line += (j + 1);
         }
         console.log(line);
     }
