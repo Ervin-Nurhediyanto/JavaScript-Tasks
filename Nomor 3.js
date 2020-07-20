@@ -13,6 +13,7 @@ Output:
 */
 
 const printSegitiga = 5;
+
 if (typeof printSegitiga == "number") {
     for (let i = 0; i < printSegitiga; i++) {
         let line = "";

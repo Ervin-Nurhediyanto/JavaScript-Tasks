@@ -45,7 +45,6 @@ let newData = { ...data,
 name : "Ervin Nurhediyanto",
 email : "cafeinai311@gmail.com" };
 
-// tambah data hobby
 newData.hobby = ["Traveling", "Gaming", "Spleeping"];
 
 let {street, city} = newData.address;
