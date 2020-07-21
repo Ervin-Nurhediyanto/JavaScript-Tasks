@@ -31,4 +31,4 @@ const SeleksiNilai = (num1, num2, [...arr]) => {
     }
   }
   
-  SeleksiNilai(5, 20, [2, 25, 4, 17, 15, 13, 22]);
+  SeleksiNilai(5, 20, [2, 25, 4, 14, 17, 30, 8]);
