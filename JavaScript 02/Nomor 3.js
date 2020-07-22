@@ -17,18 +17,23 @@
 // Output:
 // “Jumlah angka dalam dataArray harus lebih dari 5”
 
-const SeleksiNilai = (num1, num2, [...arr]) => {
-    let sortArr = arr.sort((a, b) => a - b);
-    let filterArr = sortArr.filter((item) => {
-      return item > num1 && item < num2
-    });
-    if (num2 < num1) {
-      console.log("Nilai akhir harus lebih besar dari nilai awal");
-    } else if (sortArr.length < 5) {
-      console.log("Jumlah angka dalam dataArray harus lebih dari 5");
+const SeleksiNilai = (num1, num2, arr) => {
+  let sortArr = arr.sort((a, b) => a - b);
+  let filterArr = sortArr.filter((item) => {
+    return item > num1 && item < num2
+  });
+  if (sortArr.length > 5) {
+    if (num2 > num1) {
+      if (filterArr != "") {
+        console.log(filterArr);
+      } else {
+        console.log("Tidak ada Data");
+      }
     } else {
-      console.log(filterArr);
+      console.log("Nilai akhir harus lebih besar dari nilai awal");
     }
+  } else {
+    console.log("Jumlah angka dalam dataArray harus lebih dari 5");
   }
-  
-  SeleksiNilai(5, 20, [2, 25, 4, 14, 17, 30, 8]);
+}
+SeleksiNilai(5, 20, [2, 25, 4, 14, 17, 30, 8]);
