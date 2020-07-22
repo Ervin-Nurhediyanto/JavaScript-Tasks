@@ -14,22 +14,22 @@
 // [“Alexandra”,”Amanda”,”Angela”]
 
 const name = [
-    "Abigail", "Alexandra", "Alison",
-    "Amanda", "Angela", "Bella",
-    "Carol", "Caroline", "Carolyn",
-    "Deirdre", "Diana", "Elizabeth",
-    "Ella", "Faith", "Olivia", "Penelope"];
-  
-  const search = (key, lim) => {
-    const dataFilter = name.filter((item) => {
-      return item.toLowerCase().indexOf(key.toLowerCase()) > -1;
-    });
-    const dataLimit = dataFilter.slice(0, lim);
-    console.log(dataLimit);
-  }
-  
-  const searchName = (keyword, limit, callback) => {
-    callback(keyword, limit);
-  }
-  
-  searchName('an', 3, search);
+  "Abigail", "Alexandra", "Alison",
+  "Amanda", "Angela", "Bella",
+  "Carol", "Caroline", "Carolyn",
+  "Deirdre", "Diana", "Elizabeth",
+  "Ella", "Faith", "Olivia", "Penelope"];
+
+const limitData = (data, lim) => {
+  const dataLimit = data.slice(0, lim);
+  console.log(dataLimit);
+}
+
+const searchName = (keyword, limit, callback) => {
+  const filterData = name.filter((item) => {
+    return item.toLowerCase().indexOf(keyword.toLowerCase()) > -1
+  });
+  callback(filterData, limit);
+}
+
+searchName('el', 4, limitData);
