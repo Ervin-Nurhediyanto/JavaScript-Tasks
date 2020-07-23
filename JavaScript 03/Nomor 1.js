@@ -21,10 +21,10 @@ const cekHariKerja = (day) => {
 
 cekHariKerja('senin')
     .then((res) => {
-        console.log(res)
+        console.log(`${res} (then catch)`)
     })
     .catch((err) => {
-        console.log(err)
+        console.log(`${err} (then catch)`)
     });
 
 // Fungsi then dan catch adalah untuk mengolah hasil sukses dan gagal
@@ -33,9 +33,9 @@ const checkDay = async (day) => {
     console.log(`Sekarang hari ${day.toLowerCase()}`)
     try {
         result = await cekHariKerja(day)
-        console.log(result)
+        console.log(`${result} (try catch)`)
     } catch (error) {
-        console.log(error.message);
+        console.log(`${error.message} (try catch)`);
     }
     
 }
@@ -43,3 +43,5 @@ checkDay('senin')
 
 // try menentukan blok kode yang akan diuji untuk kesalahan ketika sedang dieksekusi.
 // catch menentukan blok kode yang akan dieksekusi, jika kesalahan terjadi pada blok try.
+// async → mengubah function menjadi asynchronous
+// await → menunda eksekusi hingga proses asynchronous selesai

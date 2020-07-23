@@ -15,8 +15,6 @@ const getmonth = (callback) => {
     }, 4000)
 };
 
-// getmonth((..)=>{.....})
-
 let postmonth = (mess, month) =>{
     if(mess == null){
         month.map((item) => {

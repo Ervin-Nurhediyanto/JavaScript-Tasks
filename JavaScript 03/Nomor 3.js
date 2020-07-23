@@ -5,7 +5,7 @@ Buatlah 2 program bebas dengan menggunakan promise seperti soal nomor 1
 // Program Pertama : Check Item
 const checkItems = (search) => {
     return new Promise((resolve, reject) => {
-        setTimeout(() => {
+        
             const itemList = ['Baju', 'Tas', 'Handphone', 'Laptop'];
             let check = itemList.find((item) => {
                 return item.toLowerCase() === search.toLowerCase()
@@ -15,7 +15,7 @@ const checkItems = (search) => {
             } else {
                 reject(new Error(`Barang yang anda cari tidak ditemukan`))
             }
-        }, 2000)
+        
     })
 }
 
