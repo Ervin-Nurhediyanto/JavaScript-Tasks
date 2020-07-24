@@ -32,12 +32,12 @@ cekHariKerja('senin')
 const checkDay = async (day) => {
     console.log(`Sekarang hari ${day.toLowerCase()}`)
     try {
-        result = await cekHariKerja(day)
+        const result = await cekHariKerja(day)
         console.log(`${result} (try catch)`)
     } catch (error) {
         console.log(`${error.message} (try catch)`);
     }
-    
+
 }
 checkDay('senin')
 

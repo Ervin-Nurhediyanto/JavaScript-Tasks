@@ -15,12 +15,12 @@ const getmonth = (callback) => {
     }, 4000)
 };
 
-let postmonth = (mess, month) =>{
-    if(mess == null){
+let postmonth = (mess, month) => {
+    if (mess == null) {
         month.map((item) => {
             console.log(item);
         })
-    }else{
+    } else {
         console.log(mess);
     }
 }

@@ -5,17 +5,15 @@ Buatlah 2 program bebas dengan menggunakan promise seperti soal nomor 1
 // Program Pertama : Check Item
 const checkItems = (search) => {
     return new Promise((resolve, reject) => {
-        
-            const itemList = ['Baju', 'Tas', 'Handphone', 'Laptop'];
-            let check = itemList.find((item) => {
-                return item.toLowerCase() === search.toLowerCase()
-            })
-            if (check) {
-                resolve(`${check} tersedia`)
-            } else {
-                reject(new Error(`Barang yang anda cari tidak ditemukan`))
-            }
-        
+        const itemList = ['Baju', 'Tas', 'Handphone', 'Laptop'];
+        let check = itemList.find((item) => {
+            return item.toLowerCase() === search.toLowerCase()
+        })
+        if (check) {
+            resolve(`${check} tersedia`)
+        } else {
+            reject(new Error(`Barang yang anda cari tidak ditemukan`))
+        }
     })
 }
 
