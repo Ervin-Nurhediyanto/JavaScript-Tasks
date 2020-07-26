@@ -25,9 +25,9 @@ divideAndSort(5956560159466056);
 3. Masukan input data pada parameter number
 4. Ubah data menjadi string
 5. Pisahkan data dengan pemisah 0 (nol)
-6. Sortir masing masing data yang telah dipisahkan
+6. Sortir masing-masing data yang telah dipisahkan
 7. Gabungkan kembali data yang telah disortir
 8. Ubah kembali data menjadi Number
-9. tampilkan output data
+9. Tampilkan output data
 10. Selesai
 */

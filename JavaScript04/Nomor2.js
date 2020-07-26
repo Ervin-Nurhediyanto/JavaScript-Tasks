@@ -1,10 +1,12 @@
-// 2. Reverse Words
-// Diberikan sebuah kalimat, ubah urutan kata-kata di dalam kalimat menjadi terbalik ("tidak boleh menggunakan reverse()"). Misalnya kalimat "Saya belajar Javascript", output "Javascript belajar Saya"
+/*
+2. Reverse Words
+Diberikan sebuah kalimat, ubah urutan kata-kata di dalam kalimat menjadi terbalik ("tidak boleh menggunakan reverse()"). Misalnya kalimat "Saya belajar Javascript", output "Javascript belajar Saya"
+*/
 
 const reverseWord = (text) => {
-    const reverse = text.split('').map((item, idx, arr) => {
+    const reverse = text.split(' ').map((item, idx, arr) => {
         return arr[arr.length - 1 - idx];
     })
-    console.log(reverse.join(''));
+    console.log(reverse.join(' '));
 }
-reverseWord('Sapideman menek pager')
+reverseWord('Saya belajar Javascript')
