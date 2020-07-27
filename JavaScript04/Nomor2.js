@@ -8,5 +8,6 @@ const reverseWord = (text) => {
         return arr[arr.length - 1 - idx];
     })
     console.log(reverse.join(' '));
+    // console.log(text.split(' ').length);
 }
 reverseWord('Saya belajar Javascript')
