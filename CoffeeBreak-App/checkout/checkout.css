@@ -1,0 +1,450 @@
+* {
+    margin: 0;
+}
+
+/* Background Check */
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.orange {
+    background-color: orangered;
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+}
+
+/* End-Background Check */
+
+.container-fluid {
+    filter: brightness(50%)
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+}
+
+.image {
+    width: 220px;
+    height: 180px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.image-cart {
+    width: 60px;
+    height: 60px;
+    border-radius: 5px;
+}
+
+h2, h3, h4, button {
+    font-family: Airbnb Cereal App;
+}
+
+button {
+    color: #82DE3A;
+    font-weight: bold;
+}
+
+button.qly {
+    background-color: #FFFFFF;
+    border: 1px solid #82DE3A;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+}
+
+button.min, button.pls {
+    background-color: rgba(130, 222, 58, 0.2);
+    border: 1px solid #82DE3A;
+    box-sizing: border-box;
+    width: 20px;
+    height: 20px;
+}
+
+/* Header */
+
+header {
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+header.row {
+    justify-content: space-between;
+}
+
+header h2, aside .cart h2 {
+    font-size: 30px;
+    line-height: 39px;
+    color: #000000;
+}
+
+/* Nav */
+
+nav {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+nav .icon {
+    margin-top: 20px;
+}
+
+/* Main */
+
+main {
+    height: 610px;
+    background: rgba(190, 195, 202, 0.3);
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+main .menu {
+    width: 100%;
+}
+
+.menu .row {
+    justify-content: center;
+}
+
+/* Article */
+
+article {
+    padding: 20px
+}
+
+article .select {
+    margin-bottom: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article h4.text {
+    font-size: 18px;
+}
+
+article .select .image {
+    /* opacity: 0.8; */
+    filter: brightness(50%);
+}
+
+.tick {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url('../asset/tick.png');
+    background-size: 40px;
+}
+
+/* Aside */
+
+aside {
+    background: #FFFFFF;
+    border: 1px solid #CECECE;
+}
+
+aside .cart {
+    box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+
+aside .cart .count {
+    background: #57CAD5;
+    border-radius: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+/* Aside List */
+
+aside .scroll {
+    height: 610px;
+    overflow-y: scroll;
+}
+
+aside .scroll::-webkit-scrollbar {
+    display: none;
+}
+
+aside .list .col {
+    width: 100%;
+    padding: 20px;
+}
+
+aside .list .row {
+    justify-content: start;
+}
+
+aside .list .select {
+    margin-bottom: 15px;
+}
+
+aside .list .item {
+    height: 100%;
+    padding-left: 10px;
+    padding-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+aside .list .item h3 {
+    font-size: 25px;
+}
+
+aside .list .price {
+    margin-top: auto;
+    justify-content: space-between;
+}
+
+aside .list .price .row {
+    margin-right: 10px;
+}
+
+aside .list .price h4 {
+    font-size: 15px;
+}
+
+/* Aside btm*/
+
+aside .btm {
+    margin-top: auto;
+    margin-bottom: 0;
+    padding: 40px 20px 20px 20px;
+}
+
+aside .btm .row {
+    justify-content: space-between;
+}
+
+aside .btm p {
+    margin-top: 5px;
+}
+
+aside .btm .checkout {
+    background-color: #57CAD5;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+aside .btm .checkout button {
+    width: 100%;
+    background-color: #57CAD5;
+    border: 0;
+}
+
+aside .btm .cancel {
+    background-color: #F24F8A;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px;
+    color: #FFFFFF;
+}
+
+/* Modal */
+
+.modal .modal-body .price {
+    padding-left: 5px;
+}
+
+.modal .modal-body .list h5 {
+    font-size: 15px;
+}
+
+.modal .modal-body .total h5 {
+    font-size: 15px;
+}
+
+.modal .modal-body .price h5 {
+    font-size: 15px;
+}
+.modal .modal-body h6 {
+    font-size: 13px;
+}
+
+.modal .modal-body .total {
+    justify-content: flex-end;
+}
+
+.modal .modal-body .btn {
+    width: 400px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 30px;
+    border-radius: 10px;
+    border: 0;
+}
+
+.modal .modal-body .or {
+    text-align: center;
+}
+
+.modal .modal-body .btn-primary {
+    background-color: #F24F8A;
+}
+
+.modal .modal-body .btn-secondary {
+    background-color: #57CAD5;
+}
+
+.modal .modal-body button h3 {
+    width: 340px;
+    height: 44px;
+}
+
+@media (max-width:768px) {
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+    .image {
+        width: 100px;
+        height: 80px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .image-cart {
+        width: 50px;
+        height: 50px;
+        border-radius: 5px;
+    }
+    header, aside .cart {
+        height: 50px;
+    }
+    header h2, aside .cart h2 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    main {
+        height: 310px;
+    }
+    article h4 {
+        font-size: 12px;
+    }
+    article h3 {
+        font-size: 15px;
+    }
+    article h4.text {
+        font-size: 9px;
+    }
+    aside h3 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    aside h4 {
+        font-size: 10px;
+        line-height: 10px;
+    }
+    aside .list .item h3 {
+        font-size: 10px;
+    }
+    aside .list .price h4 {
+        font-size: 10px;
+    }
+    aside .scroll {
+        overflow-y: scroll;
+        height: 300px;
+    }
+    aside .scroll::-webkit-scrollbar {
+        display: none;
+    }
+    aside .btm .checkout {
+        margin-top: 10px;
+    }
+    aside .btm .checkout {
+        padding: 5px
+    }
+    aside .btm .cancel {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .icon {
+        width: 15px;
+        height: 15px;
+    }
+    .image {
+        width: 180px;
+        height: 150px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .image-cart {
+        width: 80px;
+        height: 80px;
+        border-radius: 5px;
+    }
+    main {
+        height: 600px;
+    }
+    main .menu .row {
+        flex-direction: column;
+    }
+    article h4 {
+        font-size: 20px;
+    }
+    aside .scroll {
+        overflow-y: scroll;
+        height: 600px;
+    }
+    aside .scroll::-webkit-scrollbar {
+        display: none;
+    }
+    aside .list h3 {
+        font-size: 12px;
+        flex-direction: column;
+    }
+    aside .list h4 {
+        flex-direction: column;
+        font-size: 12px;
+        padding-top: 5px;
+    }
+    aside .list .select {
+        justify-content: center;
+        padding: 10px;
+        padding-top: 0;
+    }
+    aside .list .price {
+        flex-direction: column;
+    }
+    aside .btm {
+        padding: 5px;
+    }
+    aside .btm h3 {
+        font-size: 11px;
+    }
+    aside .btm p {
+        font-size: 10px;
+    }
+}

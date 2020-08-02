@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+}
+
+/* Background Check */
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+/* End-Background Check */
+
+.container {
+    width: 100%;
+}
+
+.main-bar {
+    width: 70%;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+}
+
+.image {
+    width: 250px;
+    height: 200px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.image-empty {
+    width: 250px;
+    height: 250px;
+}
+
+h2, h3, h4 {
+    font-family: Airbnb Cereal App;
+}
+
+/* Header */
+
+header {
+    height: 40px;
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+header.row {
+    justify-content: space-between;
+}
+
+header h2 {
+    font-size: 30px;
+    line-height: 39px;
+    color: #000000;
+}
+
+/* Nav */
+
+nav {
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+nav .icon {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/* Main */
+
+main {
+    width: 100%;
+    height: 600px;
+    background: rgba(190, 195, 202, 0.3);
+    flex-wrap: wrap;
+    justify-content: center;
+    overflow-y: scroll;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+main .menu {
+    width: 100%;
+}
+
+.menu .row {
+    justify-content: center;
+}
+
+/* Article */
+
+article {
+    padding: 20px
+}
+
+/* Aside */
+
+aside {
+    width: 30%;
+    background: #FFFFFF;
+    border: 1px solid #CECECE;
+}
+
+aside .row {
+    justify-content: center;
+}
+
+aside .cart {
+    box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+    height: 40px;
+}
+
+aside .count {
+    background: #57CAD5;
+    border-radius: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+aside .list img {
+    padding-top: 50px;
+}
+
+aside h2 {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+aside h3 {
+    font-size: 25px;
+    line-height: 40px;
+}
+
+aside h4 {
+    font-size: 12px;
+    line-height: 25px;
+    color: #CECECE;
+}
+
+@media (max-width:768px) {
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+    .image {
+        width: 100px;
+        height: 80px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .image-empty {
+        width: 100px;
+        height: 100px;
+    }
+    header, aside .cart {
+        height: 15px;
+    }
+    header h2, aside h2 {
+        font-size: 20px;
+        line-height: 20px;
+        color: #000000;
+    }
+    main {
+        height: 310px;
+    }
+    article {
+        padding: 10px;
+    }
+    article h4 {
+        font-size: 12px;
+    }
+    article h4.text {
+        font-size: 9px;
+    }
+    aside h3 {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    aside h4 {
+        font-size: 10px;
+        line-height: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .icon {
+        width: 15px;
+        height: 15px;
+    }
+    .image {
+        width: 180px;
+        height: 150px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .image-empty {
+        width: 80px;
+        height: 80px;
+    }
+    main {
+        height: 600px;
+    }
+    main .menu .row {
+        flex-direction: column;
+    }
+    article h4 {
+        font-size: 20px;
+    }
+    aside .list h3 {
+        font-size: 18px;
+        flex-direction: column;
+        padding-left: 12px;
+        margin-bottom: 10px;
+    }
+    aside .list h4 {
+        flex-direction: column;
+        font-size: 12px;
+        padding-left: 12px;
+    }
+}

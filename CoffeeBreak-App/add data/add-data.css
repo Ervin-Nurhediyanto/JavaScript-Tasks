@@ -1,0 +1,396 @@
+* {
+    margin: 0;
+}
+
+/* Background Check */
+
+.red {
+    background-color: red;
+}
+
+.blue {
+    background-color: blue;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.green {
+    background-color: green;
+}
+
+.orange {
+    background-color: orangered;
+}
+
+.black {
+    background-color: black;
+}
+
+.white {
+    background-color: white;
+}
+
+/* End-Background Check */
+
+.container-fluid {
+    filter: brightness(50%)
+}
+
+.icon {
+    width: 35px;
+    height: 35px;
+    margin-left: 5px;
+}
+
+.image {
+    width: 220px;
+    height: 180px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.image-empty {
+    width: 250px;
+    height: 270px;
+}
+
+h2, h3, h4, button {
+    font-family: Airbnb Cereal App;
+}
+
+/* Header */
+
+header {
+    padding: 20px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+header.row {
+    justify-content: space-between;
+}
+
+header h2, aside .cart h2 {
+    font-size: 30px;
+    line-height: 39px;
+    color: #000000;
+}
+
+/* Nav */
+
+nav {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+nav .icon {
+    margin-top: 20px;
+}
+
+nav button.btn-primary {
+    background-color: transparent;
+    padding-left: 0;
+    border: 0;
+}
+
+/* Main */
+
+main {
+    height: 610px;
+    background: rgba(190, 195, 202, 0.3);
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+main::-webkit-scrollbar {
+    display: none;
+}
+
+main .menu {
+    width: 100%;
+}
+
+.menu .row {
+    justify-content: center;
+}
+
+/* Article */
+
+article {
+    padding: 20px
+}
+
+article .select {
+    margin-bottom: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article h4.text {
+    font-size: 18px;
+}
+
+article .select .image {
+    /* opacity: 0.8; */
+    filter: brightness(50%);
+}
+
+.tick {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    background-image: url('../asset/tick.png');
+    background-size: 40px;
+}
+
+/* Aside */
+
+aside {
+    background: #FFFFFF;
+    border: 1px solid #CECECE;
+}
+
+aside .cart {
+    box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+
+aside .cart .count {
+    background: #57CAD5;
+    border-radius: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+/* Aside List */
+
+aside {
+    width: 30%;
+    background: #FFFFFF;
+    border: 1px solid #CECECE;
+}
+
+aside .row {
+    justify-content: center;
+}
+
+aside .cart {
+    box-shadow: 0px 4px 1px rgba(0, 0, 0, 0.25);
+    padding: 20px;
+}
+
+aside .count {
+    background: #57CAD5;
+    border-radius: 100%;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-size: 20px;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+
+aside .list img {
+    padding-top: 50px;
+}
+
+aside h2 {
+    font-size: 30px;
+    line-height: 40px;
+}
+
+aside h3 {
+    font-size: 25px;
+    line-height: 40px;
+}
+
+aside h4 {
+    font-size: 12px;
+    line-height: 25px;
+    color: #CECECE;
+}
+
+/* Modal */
+
+.modal .modal-body h6 {
+    height: 35px;
+    padding-top: 5px;
+}
+
+.modal .modal-body input {
+    background: #FFFFFF;
+    border: 1px solid #CECECE;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    width: 100%;
+    height: 35px;
+}
+
+.modal .modal-body input.price {
+    width: 60%;
+}
+
+.modal .modal-body select .option {
+    color: #CECECE;
+}
+
+.modal .modal-body select {
+    background: #FFFFFF;
+    border: 1px solid #CECECE;
+    box-sizing: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    border-radius: 5px;
+    width: 40%;
+    height: 35px;
+}
+
+.modal .modal-body .btn {
+    width: 440px;
+    height: 60px;
+    font-weight: bold;
+    font-size: 30px;
+    margin: auto;
+    border-radius: 10px;
+    border: 0;
+}
+
+.modal .modal-body .btn-primary {
+    background-color: #57CAD5;
+    border-radius: 10px;
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+}
+
+.modal .modal-body .btn-danger {
+    background-color: #F24F8A;
+    border-radius: 10px;
+    width: 100px;
+    height: 35px;
+    font-size: 15px;
+}
+
+@media (max-width:768px) {
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+    .image {
+        width: 100px;
+        height: 80px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    .image-empty {
+        width: 100px;
+        height: 150px;
+    }
+    header, aside .cart {
+        height: 50px;
+    }
+    header h2, aside .cart h2 {
+        font-size: 20px;
+        line-height: 20px;
+    }
+    main {
+        height: 310px;
+    }
+    article h4 {
+        font-size: 10px;
+    }
+    article h3 {
+        font-size: 13px;
+    }
+    article h4.text {
+        font-size: 9px;
+    }
+    aside h3 {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    aside h4 {
+        font-size: 8px;
+        line-height: 10px;
+    }
+    aside .list .item h3 {
+        font-size: 10px;
+    }
+    aside .list .price h4 {
+        font-size: 10px;
+    }
+    aside .scroll {
+        overflow-y: scroll;
+        height: 300px;
+    }
+    aside .scroll::-webkit-scrollbar {
+        display: none;
+    }
+    aside .btm .checkout {
+        margin-top: 10px;
+    }
+    aside .btm .checkout {
+        padding: 5px
+    }
+    aside .btm .cancel {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 576px) {
+    .icon {
+        width: 15px;
+        height: 15px;
+    }
+    .image {
+        width: 180px;
+        height: 150px;
+        border-radius: 10px 10px 0px 0px;
+    }
+    main {
+        height: 600px;
+    }
+    main .menu .row {
+        flex-direction: column;
+    }
+    article h4 {
+        font-size: 20px;
+    }
+    aside .scroll {
+        overflow-y: scroll;
+        height: 600px;
+    }
+    aside .scroll::-webkit-scrollbar {
+        display: none;
+    }
+    aside .list h3 {
+        font-size: 12px;
+        flex-direction: column;
+    }
+    aside .list h4 {
+        flex-direction: column;
+        font-size: 12px;
+        padding-top: 5px;
+    }
+    aside .list .select {
+        justify-content: center;
+        padding: 10px;
+        padding-top: 0;
+    }
+    aside .list .price {
+        flex-direction: column;
+    }
+    aside .btm {
+        padding: 5px;
+    }
+    aside .btm h3 {
+        font-size: 11px;
+    }
+    aside .btm p {
+        font-size: 10px;
+    }
+}
